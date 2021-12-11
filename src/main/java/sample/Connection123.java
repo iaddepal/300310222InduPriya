@@ -8,6 +8,10 @@ import java.sql.DriverManager;
 @Service
 public class Connection123 {
 
+        public Connection123(){
+
+        }
+
         public java.sql.Connection connect() throws SQLException, ClassNotFoundException{
             Class.forName("com.mysql.jdbc.Driver");
 

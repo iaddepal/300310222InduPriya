@@ -8,6 +8,14 @@ public class InvestmentSaving {
     public int nYears;
     public String savType;
 
+    public InvestmentSaving(String custno, String custname, double cdep, int nyears, String savtype) {
+        this.custNo = custno;
+        this.custName = custname;
+        this.cDep = cdep;
+        this.nYears = nyears;
+        this.savType = savtype;
+    }
+
     public String getCustNo() {
         return custNo;
     }

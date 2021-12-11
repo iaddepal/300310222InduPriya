@@ -1,14 +1,13 @@
 package sample;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public interface DAOInterface {
 
-    void add(InvestmentSaving saving1) throws ClassNotFoundException, SQLException;
-
-    InvestmentSaving edit(InvestmentSaving custNo, String custName, double cDep, int nyears, String savType) throws SQLException, ClassNotFoundException;
-
-    void delete(String var1) throws SQLException;
-
-    void display() throws ClassNotFoundException,SQLException;
+    public String add(InvestmentSaving investmentSaving) throws ClassNotFoundException, SQLException;
+    public InvestmentSaving edit(InvestmentSaving inv) throws SQLException,ClassNotFoundException;
+    public String delete(String custNo) throws SQLException, ClassNotFoundException;
+    public List<InvestmentSaving> display() throws ClassNotFoundException,SQLException;
+    public int getDetails(String custNo) throws SQLException, ClassNotFoundException;
 }
